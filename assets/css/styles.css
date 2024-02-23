@@ -1321,10 +1321,10 @@ body.dark-theme {
     left: initial;
     right: -6rem;
   }
-  @media only screen and (max-width: 768px) {
+  @media screen and (max-width: 1150px) {
     .home__social {
-        display: none; /* Hide the element on mobile devices */
-    }
+       display: none;
+     }
   }
   .home__social-link {
     font-size: 1.5rem;
