@@ -1321,6 +1321,13 @@ body.dark-theme {
     left: initial;
     right: -6rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    .home__social {
+        right: initial;
+        left: -6rem;
+    }
+  }
   .home__social-link {
     font-size: 1.5rem;
     padding: .5rem;
