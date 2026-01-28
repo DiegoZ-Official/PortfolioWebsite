@@ -65,7 +65,9 @@ const sendEmail = (e) =>{
       })
 }
 
-contactForm.addEventListener('submit', sendEmail)
+if (contactForm) {
+   contactForm.addEventListener('submit', sendEmail)
+}
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
@@ -140,4 +142,54 @@ const sr = ScrollReveal({
  sr.reveal(`.home__name, .home__info, 
             .about__container .section__title-1, .about__info, 
             .contact__social, .contact__data`, {origin: 'left'})
- sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.services__card, .projects__card`, {interval: 100})
+
+/*=============== EMAIL POPOVER COPY ===============*/
+const socialEmailTriggers = document.querySelectorAll('.social-email')
+
+const closeEmailPopovers = (active) => {
+   socialEmailTriggers.forEach((item) => {
+      if (item !== active) {
+         item.classList.remove('is-open', 'is-copied')
+      }
+   })
+}
+
+socialEmailTriggers.forEach((item) => {
+   const trigger = item.querySelector('button')
+   const copyButton = item.querySelector('.email-popover__copy')
+   const email = item.dataset.email || ''
+
+   if (!trigger || !copyButton) return
+
+   trigger.addEventListener('click', (event) => {
+      event.preventDefault()
+      const isOpen = item.classList.contains('is-open')
+      closeEmailPopovers(item)
+      item.classList.toggle('is-open', !isOpen)
+      item.classList.remove('is-copied')
+   })
+
+   copyButton.addEventListener('click', async (event) => {
+      event.preventDefault()
+      try {
+         await navigator.clipboard.writeText(email)
+         item.classList.add('is-copied')
+         setTimeout(() => item.classList.remove('is-copied'), 1500)
+      } catch (error) {
+         item.classList.remove('is-copied')
+      }
+   })
+})
+
+document.addEventListener('click', (event) => {
+   if (!event.target.closest('.social-email')) {
+      closeEmailPopovers()
+   }
+})
+
+/*=============== CURRENT YEAR ===============*/
+const currentYear = document.getElementById('current-year')
+if (currentYear) {
+   currentYear.textContent = new Date().getFullYear()
+}

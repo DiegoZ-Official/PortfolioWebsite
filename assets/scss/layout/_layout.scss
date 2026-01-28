@@ -60,3 +60,79 @@
 .main{
    overflow: hidden; /* For animation ScrollReveal */
 }
+
+.social-email{
+   position: relative;
+   display: inline-flex;
+}
+
+.social-email .home__social-link,
+.social-email .contact__social-link{
+   border: 0;
+   cursor: pointer;
+}
+
+.email-popover{
+   position: absolute;
+   bottom: 130%;
+   left: 50%;
+   transform: translateX(-50%) translateY(6px);
+   background-color: var(--body-color);
+   color: var(--title-color);
+   border: 2px solid var(--black-color);
+   border-radius: .5rem;
+   padding: .5rem .75rem;
+   min-width: 220px;
+   display: grid;
+   gap: .35rem;
+   text-align: center;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition: opacity .2s, transform .2s, visibility .2s;
+   z-index: 10;
+}
+
+.email-popover::after{
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   width: 10px;
+   height: 10px;
+   background-color: var(--body-color);
+   border-right: 2px solid var(--black-color);
+   border-bottom: 2px solid var(--black-color);
+   transform: translateX(-50%) rotate(45deg);
+}
+
+.email-popover__text{
+   font-weight: var(--font-medium);
+}
+
+.email-popover__copy{
+   background-color: var(--black-color);
+   color: var(--white-color);
+   border: 0;
+   border-radius: .35rem;
+   padding: .35rem .75rem;
+   font-size: var(--small-font-size);
+   cursor: pointer;
+}
+
+.email-popover__copied{
+   font-size: var(--small-font-size);
+   color: var(--text-color);
+   display: none;
+}
+
+.social-email.is-open .email-popover{
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
+   transform: translateX(-50%) translateY(0);
+}
+
+.social-email.is-copied .email-popover__copied{
+   display: block;
+}

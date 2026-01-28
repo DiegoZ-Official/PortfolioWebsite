@@ -1,6 +1,6 @@
 /*=============== PROJECTS ===============*/
 .projects{
-   background-color: var(--container-color);
+   background-color: var(--body-color);
    transition: background-color .4s; /* for dark mode */
 
    &__container{
@@ -8,6 +8,9 @@
    }
    &__card{
       padding: 1rem 1rem 2rem;
+      background-color: var(--body-color);
+      display: flex;
+      flex-direction: column;
       transition: background-color .4s;
    }
    &__image{
@@ -22,6 +25,7 @@
    }
    &__content{
       margin-bottom: 1.25rem;
+      flex: 1;
    }
    &__subtitle{
       position: relative;
@@ -70,7 +74,13 @@
          color: var(--first-color);
       }
    }
+   &__cta{
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      margin-top: .5rem;
+   }
    &__card:hover{
-      background-color: var(--white-color);
+      background-color: var(--body-color);
    }
 }

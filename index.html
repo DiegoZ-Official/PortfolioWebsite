@@ -96,10 +96,16 @@
                   </style>
 
                   <div class="home__social">
-                     <a href="https://www.instagram.com/diezam4.2/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
-                     </a>
-
+                     <div class="social-email" data-email="diegozamud42@gmail.com">
+                        <button type="button" class="home__social-link" aria-label="Email">
+                           <i class="ri-mail-line"></i>
+                        </button>
+                        <div class="email-popover" role="status" aria-live="polite">
+                           <span class="email-popover__text">diegozamud42@gmail.com</span>
+                           <button type="button" class="email-popover__copy">Copy</button>
+                           <span class="email-popover__copied" aria-hidden="true">Copied!</span>
+                        </div>
+                     </div>
                      <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" target="_blank" class="home__social-link">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
@@ -174,7 +180,7 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" hidden>
             <h2 class="section__title-2">
                <span>Services.</span>
             </h2>
@@ -246,6 +252,133 @@
 
             <div class="projects__container container grid">
             
+               <!--AgentPM-->
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/AgentPM-Legacy-Edition.jpg" alt="image" class="projects__img">
+
+                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">AI Tool</h3>
+                     <h2 class="projects__title">AgentPM</h2>
+
+                     <p class="projects__description">
+                        AI-powered PM assistant automating project setup,
+                        reporting, and risk surfacing with human oversight.
+                        Integrates with Jira via FastAPI backend and React UI.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+
+                     <span class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </span>
+                  </div>
+               </article>
+
+               <!--Stonewtr.com-->
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/Stonewtr.jpg" alt="image" class="projects__img">
+
+                     <a href="https://stonewtr.com" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Website</h3>
+                     <h2 class="projects__title">Stone Water</h2>
+
+                     <p class="projects__description">
+                        Stonewtr.com is a WordPress site I created for a ponds
+                        and gardens landscaping business. I host and manage it.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://stonewtr.com" target="_blank" class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </a>
+
+                     <span class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </span>
+                  </div>
+               </article>
+
+               <!--MySQL ServiceQuote Portal-->
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/MySQL-ServiceQuote-Portal.jpg" alt="image" class="projects__img">
+
+                     <a href="https://www.youtube.com/watch?v=mfptP7AJW60" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Web App</h3>
+                     <h2 class="projects__title">MySQL ServiceQuote Portal</h2>
+
+                     <p class="projects__description">
+                        Full-stack portal for quotes, scheduling, orders, and billing.
+                        Clients register, submit property details/photos, and admins
+                        review requests, track orders, manage bills, and export reports.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/DiegoZ-Official/MySQL-ServiceQuote-Portal" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+
+                     <span class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </span>
+                  </div>
+               </article>
+
+               <!--Java CLI Banking Simulator-->
+               <article class="projects__card">
+                  <div class="projects__image">
+                     <img src="assets/img/Java-CLI-Banking-Simulator.jpg" alt="image" class="projects__img">
+
+                     <a href="https://onlinegdb.com/RamSM1ekBz" class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                     </a>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">CLI App</h3>
+                     <h2 class="projects__title">Java CLI Banking Simulator</h2>
+
+                     <p class="projects__description">
+                        Interactive Java CLI simulating retail banking. Users
+                        create accounts with password rules, log in, and handle
+                        deposits, withdrawals, balance checks, and wire transfers.
+                     </p>
+                  </div>
+
+                  <div class="projects__buttons">
+                     <a href="https://github.com/DiegoZ-Official/Java-CLI-Banking-Simulator" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                     </a>
+
+                     <span class="projects__link">
+                        <i class="ri-dribbble-line"></i> View
+                     </span>
+                  </div>
+               </article>
+
                <!--Pokemon Matching Game-->
                <article class="projects__card">
                   <div class="projects__image">
@@ -310,6 +443,10 @@
                      </a>
                   </div>
                </article>
+
+               <div class="projects__cta">
+                  <a href="all-projects.html" class="button">View All Projects</a>
+               </div>
 
             </div>
          </section>
@@ -381,16 +518,24 @@
                      </div>
 
                      <div class="contact__social-links">
-                        <a href="https://github.com/DiegoZ-Official" class="contact__social-link" target="_blank">
-                           <i class="ri-github-line"></i>
-                        </a>
-   
-                        <a href="https://www.instagram.com/diezam4.2/" class="contact__social-link" target="_blank">
-                           <i class="ri-instagram-line"></i>
-                        </a>
+                        <div class="social-email" data-email="diegozamud42@gmail.com">
+                           <button type="button" class="contact__social-link" aria-label="Email">
+                              <i class="ri-mail-line"></i>
+                           </button>
+                           <div class="email-popover" role="status" aria-live="polite">
+                              <span class="email-popover__text">diegozamud42@gmail.com</span>
+                              <button type="button" class="email-popover__copy">Copy</button>
+                              <span class="email-popover__copied" aria-hidden="true">Copied!</span>
+                           </div>
+                        </div>
+
    
                         <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" class="contact__social-link" target="_blank">
                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/DiegoZ-Official" class="contact__social-link" target="_blank">
+                           <i class="ri-github-line"></i>
                         </a>
                      </div>
                   </div>
@@ -417,7 +562,7 @@
             </ul>
 
             <span class="footer__copy">
-               &#169; 2024
+               &#169; <span id="current-year">2024</span>
                <a href="#">Diego Zamudio.</a>
             </span>
          </div>
