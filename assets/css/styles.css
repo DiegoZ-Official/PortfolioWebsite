@@ -84,6 +84,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -102,6 +106,14 @@ img {
   color: var(--title-color);
   cursor: pointer;
   transition: color .3s;
+}
+
+.nav__toggle,
+.nav__close,
+.change-theme {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -1189,6 +1201,20 @@ body.dark-theme {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/

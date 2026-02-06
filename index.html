@@ -3,6 +3,17 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Diego Zamudio is a full stack developer crafting clean, user-friendly web experiences and tools. Explore featured projects, skills, and contact details.">
+
+      <meta property="og:title" content="Diego Zamudio | Full Stack Developer">
+      <meta property="og:description" content="Portfolio of Diego Zamudio featuring full stack projects, UI/UX work, and contact info.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="assets/img/home-perfil.jpg">
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Diego Zamudio | Full Stack Developer">
+      <meta name="twitter:description" content="Portfolio of Diego Zamudio featuring full stack projects, UI/UX work, and contact info.">
+      <meta name="twitter:image" content="assets/img/home-perfil.jpg">
 
       <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -49,19 +60,21 @@
                </ul>
 
                <!-- Close button -->
-               <div class="nav__close" id="nav-close">
+               <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
                   <i class="ri-close-line"></i>
-               </div>
+               </button>
             </div>
 
             <div class="nav__buttons">
                <!-- Theme button -->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
+               <button type="button" class="change-theme" id="theme-button" aria-label="Toggle dark mode">
+                  <i class="ri-moon-line" aria-hidden="true"></i>
+               </button>
 
                <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
+               <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
                   <i class="ri-menu-4-line"></i>
-               </div>
+               </button>
             </div>
          </nav>
       </header>
@@ -77,7 +90,7 @@
 
                <div class="home__perfil">
                   <div class="home__image">
-                     <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                     <img src="assets/img/home-perfil.jpg" alt="Portrait of Diego Zamudio" class="home__img" decoding="async">
                      <div class="home__shadow"></div>
 
                      <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
@@ -86,14 +99,6 @@
                      <div class="geometric-box"></div>
                   </div>
 
-
-                  <style>
-                     @media only screen and (max-width: 600px) {
-                        .home__social {
-                           display: none;
-                        }
-                     }
-                  </style>
 
                   <div class="home__social">
                      <div class="social-email" data-email="diegozamud42@gmail.com">
@@ -106,11 +111,11 @@
                            <span class="email-popover__copied" aria-hidden="true">Copied!</span>
                         </div>
                      </div>
-                     <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" target="_blank" class="home__social-link">
+                     <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="LinkedIn profile">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
 
-                     <a href="https://github.com/DiegoZ-Official" target="_blank" class="home__social-link">
+                     <a href="https://github.com/DiegoZ-Official" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="GitHub profile">
                         <i class="ri-github-line"></i>
                      </a>
                   </div>
@@ -118,9 +123,8 @@
 
                <div class="home__info">
                   <p class="home__description">
-                     <b>Full Stack Developer</b>, with experience in web 
-                     development and design, blending creativity and strategic 
-                     thinking in every project.
+                     <b>Full-stack developer</b> building clean, fast web apps and sites
+                     end-to-end, from UI to backend.
                   </p>
                   
                   <a href="#about" class="home__scroll">
@@ -143,7 +147,7 @@
 
                <div class="about__perfil">
                   <div class="about__image">
-                     <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+                     <img src="assets/img/about-perfil.jpg" alt="Diego Zamudio working at a desk" class="about__img" loading="lazy" decoding="async">
 
                      <div class="about__shadow"></div>
 
@@ -155,14 +159,14 @@
 
                <div class="about__info">
                   <p class="about__description">
-                     Passionate about creating software solutions to enhance everyday tasks,
-                     with <b>UI/UX experiences</b>, that look and feel clean.
+                     <b>Building full-stack web apps</b> that turn messy workflows into clean, reliable software.
+                     I design for user experience and build for reliability.
                   </p>
 
                   <ul class="about__list">
                      <li class="about__item">
-                        <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                        C++, Git & GitHub. 
+                        <b>Core Skills:</b> JavaScript/TypeScript, React, Python (FastAPI),
+                        SQL (MySQL), HTML/CSS, Git/GitHub.
                      </li>
                   </ul>
 
@@ -171,7 +175,7 @@
                         <i class="ri-send-plane-line"></i> Contact Me
                      </a>
 
-                     <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" target="_blank" class="button__ghost">
+                     <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" target="_blank" rel="noopener noreferrer" class="button__ghost" aria-label="LinkedIn profile">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
                   </div>
@@ -237,7 +241,7 @@
    
                      <p class="services__description">
                         Design and transform ideas 
-                        into custom, eye catching graphics.
+                        into custom, eye-catching graphics.
                      </p>
                   </div>
                </article>
@@ -255,9 +259,9 @@
                <!--AgentPM-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/AgentPM-Legacy-Edition.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/AgentPM-Legacy-Edition.jpg" alt="Screenshot of AgentPM project" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://www.youtube.com/watch?v=Ovf3cVw84i4" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://www.youtube.com/watch?v=Ovf3cVw84i4" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open AgentPM demo video">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -274,22 +278,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Stonewtr.com-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Stonewtr.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Stonewtr.jpg" alt="Screenshot of Stone Water website" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://stonewtr.com" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://stonewtr.com" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Stone Water website">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -299,28 +299,24 @@
                      <h2 class="projects__title">Stone Water</h2>
 
                      <p class="projects__description">
-                        Stonewtr.com is a WordPress site I created for a ponds
-                        and gardens landscaping business. I host and manage it.
+                        Stonewtr.com is a WordPress site I created for a pond
+                        and garden landscaping business. I host and manage it.
                      </p>
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://stonewtr.com" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                     <a href="https://stonewtr.com" target="_blank" rel="noopener noreferrer" class="projects__link">
+                        <i class="ri-global-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--MySQL ServiceQuote Portal-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/MySQL-ServiceQuote-Portal.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/MySQL-ServiceQuote-Portal.jpg" alt="Screenshot of MySQL ServiceQuote Portal" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://www.youtube.com/watch?v=mfptP7AJW60" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://www.youtube.com/watch?v=mfptP7AJW60" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open MySQL ServiceQuote Portal demo video">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -337,22 +333,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/MySQL-ServiceQuote-Portal" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/MySQL-ServiceQuote-Portal" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Java CLI Banking Simulator-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Java-CLI-Banking-Simulator.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Java-CLI-Banking-Simulator.jpg" alt="Screenshot of Java CLI Banking Simulator" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/RamSM1ekBz" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/RamSM1ekBz" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Java CLI Banking Simulator demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -369,22 +361,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Java-CLI-Banking-Simulator" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Java-CLI-Banking-Simulator" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Pokemon Matching Game-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Pokemon.Matching.Game.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Pokemon.Matching.Game.jpg" alt="Screenshot of Pokemon Matching Game" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Pokemon Matching Game demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -396,17 +384,13 @@
                      <p class="projects__description">
                         A traditional matching game with a fun Pokemon theme.
                         Getting comfortable with my HTML, CSS, and JavaScript 
-                        skills. Personaly a fun full stack experience.
+                        skills. Personally a fun full stack experience.
                      </p>
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Pokemon.Matching.Game" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Pokemon.Matching.Game" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
                      </a>
                   </div>
                </article>
@@ -414,9 +398,9 @@
                <!--Personal Website-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/personal-website.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/personal-website.jpg" alt="Screenshot of personal portfolio website" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open personal website demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -434,12 +418,8 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/PortfolioWebsite" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/PortfolioWebsite" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
                      </a>
                   </div>
                </article>
@@ -523,18 +503,18 @@
                               <i class="ri-mail-line"></i>
                            </button>
                            <div class="email-popover" role="status" aria-live="polite">
-                              <span class="email-popover__text">diegozamud42@gmail.com</span>
-                              <button type="button" class="email-popover__copy">Copy</button>
-                              <span class="email-popover__copied" aria-hidden="true">Copied!</span>
-                           </div>
+                           <span class="email-popover__text">diegozamud42@gmail.com</span>
+                           <button type="button" class="email-popover__copy">Copy</button>
+                           <span class="email-popover__copied" aria-hidden="true">Copied!</span>
                         </div>
+                     </div>
 
    
-                        <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" class="contact__social-link" target="_blank">
+                        <a href="https://www.linkedin.com/in/diego-zamudio-80176b230/" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                            <i class="ri-linkedin-box-line"></i>
                         </a>
 
-                        <a href="https://github.com/DiegoZ-Official" class="contact__social-link" target="_blank">
+                        <a href="https://github.com/DiegoZ-Official" class="contact__social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                            <i class="ri-github-line"></i>
                         </a>
                      </div>
@@ -569,7 +549,7 @@
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
+      <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
          <i class="ri-arrow-up-s-line"></i>
       </a>
 

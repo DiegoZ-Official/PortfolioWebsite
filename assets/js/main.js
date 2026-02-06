@@ -101,6 +101,7 @@ window.addEventListener('scroll', scrollActive)
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
+const themeIcon = themeButton ? themeButton.querySelector('i') : null
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
 
@@ -110,39 +111,44 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+const getCurrentIcon = () => themeIcon && themeIcon.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
 // We validate if the user previously chose a topic
-if (selectedTheme) {
+if (selectedTheme && themeButton && themeIcon) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+  themeIcon.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+if (themeButton && themeIcon) {
+    themeButton.addEventListener('click', () => {
+        // Add or remove the dark / icon theme
+        document.body.classList.toggle(darkTheme)
+        themeIcon.classList.toggle(iconTheme)
+        // We save the theme and the current icon that the user chose
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+    })
+}
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true // Animations repeat
- })
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+if (!prefersReducedMotion) {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        // reset: true // Animations repeat
+     })
 
- sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin: 'right'})
- sr.reveal(`.home__name, .home__info, 
-            .about__container .section__title-1, .about__info, 
-            .contact__social, .contact__data`, {origin: 'left'})
-sr.reveal(`.services__card, .projects__card`, {interval: 100})
+     sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin: 'right'})
+     sr.reveal(`.home__name, .home__info, 
+                .about__container .section__title-1, .about__info, 
+                .contact__social, .contact__data`, {origin: 'left'})
+    sr.reveal(`.services__card, .projects__card`, {interval: 100})
+}
 
 /*=============== EMAIL POPOVER COPY ===============*/
 const socialEmailTriggers = document.querySelectorAll('.social-email')

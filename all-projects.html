@@ -3,6 +3,17 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="All projects by Diego Zamudio. Explore web apps, CLI tools, games, and websites with links to demos and source code.">
+
+      <meta property="og:title" content="All Projects | Diego Zamudio">
+      <meta property="og:description" content="Browse Diego Zamudio's full project list with demos and repositories.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="assets/img/AgentPM-Legacy-Edition.jpg">
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="All Projects | Diego Zamudio">
+      <meta name="twitter:description" content="Browse Diego Zamudio's full project list with demos and repositories.">
+      <meta name="twitter:image" content="assets/img/AgentPM-Legacy-Edition.jpg">
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/styles.css">
@@ -32,16 +43,18 @@
                   </li>
                </ul>
 
-               <div class="nav__close" id="nav-close">
+               <button type="button" class="nav__close" id="nav-close" aria-label="Close menu">
                   <i class="ri-close-line"></i>
-               </div>
+               </button>
             </div>
 
             <div class="nav__buttons">
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
-               <div class="nav__toggle" id="nav-toggle">
+               <button type="button" class="change-theme" id="theme-button" aria-label="Toggle dark mode">
+                  <i class="ri-moon-line" aria-hidden="true"></i>
+               </button>
+               <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu">
                   <i class="ri-menu-4-line"></i>
-               </div>
+               </button>
             </div>
          </nav>
       </header>
@@ -57,9 +70,9 @@
                <!--AgentPM-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/AgentPM-Legacy-Edition.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/AgentPM-Legacy-Edition.jpg" alt="Screenshot of AgentPM project" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://www.youtube.com/watch?v=Ovf3cVw84i4" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://www.youtube.com/watch?v=Ovf3cVw84i4" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open AgentPM demo video">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -76,22 +89,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/AgentPM-Legacy-Edition" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Stonewtr.com-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Stonewtr.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Stonewtr.jpg" alt="Screenshot of Stone Water website" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://stonewtr.com" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://stonewtr.com" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Stone Water website">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -101,28 +110,24 @@
                      <h2 class="projects__title">Stone Water</h2>
 
                      <p class="projects__description">
-                        Stonewtr.com is a WordPress site I created for a ponds
-                        and gardens landscaping business. I host and manage it.
+                        Stonewtr.com is a WordPress site I created for a pond
+                        and garden landscaping business. I host and manage it.
                      </p>
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://stonewtr.com" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                     <a href="https://stonewtr.com" target="_blank" rel="noopener noreferrer" class="projects__link">
+                        <i class="ri-global-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--MySQL ServiceQuote Portal-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/MySQL-ServiceQuote-Portal.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/MySQL-ServiceQuote-Portal.jpg" alt="Screenshot of MySQL ServiceQuote Portal" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://www.youtube.com/watch?v=mfptP7AJW60" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://www.youtube.com/watch?v=mfptP7AJW60" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open MySQL ServiceQuote Portal demo video">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -139,22 +144,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/MySQL-ServiceQuote-Portal" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/MySQL-ServiceQuote-Portal" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Java CLI Banking Simulator-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Java-CLI-Banking-Simulator.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Java-CLI-Banking-Simulator.jpg" alt="Screenshot of Java CLI Banking Simulator" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/RamSM1ekBz" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/RamSM1ekBz" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Java CLI Banking Simulator demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -171,22 +172,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Java-CLI-Banking-Simulator" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Java-CLI-Banking-Simulator" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Pokemon Matching Game-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Pokemon.Matching.Game.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Pokemon.Matching.Game.jpg" alt="Screenshot of Pokemon Matching Game" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Pokemon Matching Game demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -198,17 +195,13 @@
                      <p class="projects__description">
                         A traditional matching game with a fun Pokemon theme.
                         Getting comfortable with my HTML, CSS, and JavaScript 
-                        skills. Personaly a fun full stack experience.
+                        skills. Personally a fun full stack experience.
                      </p>
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Pokemon.Matching.Game" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Pokemon.Matching.Game" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="https://diegoz-official.github.io/Pokemon.Matching.Game/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
                      </a>
                   </div>
                </article>
@@ -216,9 +209,9 @@
                <!--Personal Website-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/personal-website.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/personal-website.jpg" alt="Screenshot of personal portfolio website" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open personal website demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -236,12 +229,8 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/PortfolioWebsite" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/PortfolioWebsite" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="https://diegoz-official.github.io/PortfolioWebsite/" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
                      </a>
                   </div>
                </article>
@@ -249,9 +238,9 @@
                <!--Console Blackjack Dealer-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Console-Blackjack-Dealer.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Console-Blackjack-Dealer.jpg" alt="Screenshot of Console Blackjack Dealer" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/P7QN-qTgU" class="projects__button button">
+                     <a href="https://onlinegdb.com/P7QN-qTgU" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Console Blackjack Dealer demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -268,22 +257,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Console-Blackjack-Dealer" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Console-Blackjack-Dealer" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--User Management MySQL Web App-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/User-Management-MySQL-Web-App.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/User-Management-MySQL-Web-App.jpg" alt="Screenshot of User Management MySQL Web App" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://www.youtube.com/watch?v=84NnLJg92TY" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://www.youtube.com/watch?v=84NnLJg92TY" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open User Management MySQL Web App demo video">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -300,22 +285,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/User-Management-MySQL-Web-App" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/User-Management-MySQL-Web-App" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--BlueFlares Digital Marketing Demo Site-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/BlueFlares-Digital-Marketing-Demo-Site.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/BlueFlares-Digital-Marketing-Demo-Site.jpg" alt="Screenshot of BlueFlares marketing demo site" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://diegoz-official.github.io/BlueFlares-Digital-Marketing-Demo-Site/index.html" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://diegoz-official.github.io/BlueFlares-Digital-Marketing-Demo-Site/index.html" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open BlueFlares demo site">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -332,22 +313,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/BlueFlares-Digital-Marketing-Demo-Site" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/BlueFlares-Digital-Marketing-Demo-Site" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Car Inventory Console Printer-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Car-Inventory-Console-Printer.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Car-Inventory-Console-Printer.jpg" alt="Screenshot of Car Inventory Console Printer" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/N28zC9sXy" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/N28zC9sXy" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Car Inventory Console Printer demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -364,22 +341,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Car-Inventory-Console-Printer" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Car-Inventory-Console-Printer" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Heap Sort CLI-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Heap-Sort-CLI.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Heap-Sort-CLI.jpg" alt="Screenshot of Heap Sort CLI" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/Wp1u9fxYhT" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/Wp1u9fxYhT" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Heap Sort CLI demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -396,22 +369,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Heap-Sort-CLI" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Heap-Sort-CLI" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Unix Process and Signal Demo-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Unix-Process-and-Signal-Demo .jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Unix-Process-and-Signal-Demo .jpg" alt="Screenshot of Unix Process and Signal Demo" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/7y3pGdnJv" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/7y3pGdnJv" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Unix Process and Signal Demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -428,22 +397,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Unix-Process-and-Signal-Demo" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Unix-Process-and-Signal-Demo" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--Candy Shop Vending Simulator-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/Candy-Shop-Vending-Simulator.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/Candy-Shop-Vending-Simulator.jpg" alt="Screenshot of Candy Shop Vending Simulator" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/4oNb1Sx_oZ" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/4oNb1Sx_oZ" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open Candy Shop Vending Simulator demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -460,22 +425,18 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/Candy-Shop-Vending-Simulator" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/Candy-Shop-Vending-Simulator" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
 
                <!--CLI Currency Converter with Receipt Output-->
                <article class="projects__card">
                   <div class="projects__image">
-                     <img src="assets/img/CLI-Currency-Converter-with-Receipt-Output.jpg" alt="image" class="projects__img">
+                     <img src="assets/img/CLI-Currency-Converter-with-Receipt-Output.jpg" alt="Screenshot of CLI Currency Converter" class="projects__img" loading="lazy" decoding="async">
 
-                     <a href="https://onlinegdb.com/HPvHhJ6KX" class="projects__button button" target="_blank" rel="noopener">
+                     <a href="https://onlinegdb.com/HPvHhJ6KX" class="projects__button button" target="_blank" rel="noopener noreferrer" aria-label="Open CLI Currency Converter demo">
                         <i class="ri-arrow-right-up-line"></i>
                      </a>
                   </div>
@@ -492,13 +453,9 @@
                   </div>
 
                   <div class="projects__buttons">
-                     <a href="https://github.com/DiegoZ-Official/CLI-Currency-Converter-with-Receipt-Output" target="_blank" class="projects__link">
+                     <a href="https://github.com/DiegoZ-Official/CLI-Currency-Converter-with-Receipt-Output" target="_blank" rel="noopener noreferrer" class="projects__link">
                         <i class="ri-github-line"></i> View
                      </a>
-
-                     <span class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
-                     </span>
                   </div>
                </article>
             </div>
@@ -528,12 +485,11 @@
          </div>
       </footer>
 
-      <a href="#" class="scrollup" id="scroll-up">
+      <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
          <i class="ri-arrow-up-s-line"></i>
       </a>
 
       <script src="assets/js/scrollreveal.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script src="assets/js/main.js"></script>
    </body>
 </html>
