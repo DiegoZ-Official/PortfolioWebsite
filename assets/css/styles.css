@@ -1426,6 +1426,7 @@ body.dark-theme {
     display: flex;
     align-items: center;
     column-gap: .75rem;
+    margin-top: .75rem;
   }
   .home__scroll-text {
     display: block;
