@@ -584,6 +584,7 @@ body.dark-theme {
   gap: 1rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .home__cta-button {
