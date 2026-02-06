@@ -524,8 +524,8 @@ body.dark-theme {
 }
 
 .home__line {
-  right: -2rem;
-  bottom: -.5rem;
+  right: 1rem;
+  bottom: 3.5rem;
 }
 
 .home__perfil .geometric-box {
@@ -575,6 +575,20 @@ body.dark-theme {
   text-align: center;
   color: var(--title-color);
   margin-bottom: 1.5rem;
+}
+
+.home__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.home__cta-button {
+  min-width: 170px;
+  justify-content: center;
 }
 
 .home__description b {
@@ -1394,7 +1408,7 @@ body.dark-theme {
   .home__description {
     position: relative;
     font-size: var(--h2-font-size);
-    margin-bottom: 5.5rem;
+    margin-bottom: 2rem;
     padding-left: 3rem;
   }
   .home__description::after {
@@ -1435,8 +1449,8 @@ body.dark-theme {
     width: 80px;
   }
   .home__line {
-    left: -15rem;
-    bottom: 4rem;
+    left: -10rem;
+    bottom: 7rem;
     width: 80px;
     rotate: 30deg;
   }
