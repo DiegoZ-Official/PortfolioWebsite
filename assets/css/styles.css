@@ -582,7 +582,7 @@ body.dark-theme {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -602,6 +602,7 @@ body.dark-theme {
   display: block;
   width: max-content;
   margin: 0 auto;
+  margin-top: 1.5rem;
 }
 
 .home__scroll-text {
@@ -1426,7 +1427,7 @@ body.dark-theme {
     display: flex;
     align-items: center;
     column-gap: .75rem;
-    margin-top: .75rem;
+    margin-top: 1.5rem;
   }
   .home__scroll-text {
     display: block;
